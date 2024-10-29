@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DASHBOARD ESP32 Sensor de Humedad</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="topnav">
+        <h1>LECTURA DE SENSOR (WEBSOCKET)</h1>
+    </header>
+
+    <main class="content">
+        <div class="card">
+            <div class="card-grid">
+                <div class="card">
+                    <p class="card-title"><i class="fas fa-thermometer-threequarters" style="color:#059e8a;"></i> Temperatura &deg;C</p>
+                    <p class="reading"><span id="temperature"></span> &deg;C</p>
+                </div>
+                <div class="card">
+                    <p class="card-title">Humedad</p>
+                    <p class="reading"><span id="humidity"></span> &percnt;</p>
+                </div>
+                <div class="card">
+                    <p class="card-title">Temperatura &deg;F</p>
+                    <p class="reading"><span id="pressure"></span> &deg;F</p>
+                </div>
+            </div>
+            <p>
+                <button id="myButton" class="button" aria-label="Encender LED">Cambiar estado LED</button>
+            </p>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
