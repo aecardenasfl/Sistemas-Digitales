@@ -23,6 +23,18 @@ Librerias:
 
 Si se instala directamente desde el library manager de Arduino.IDE instalar todas las dependencias (AsyncTCP es dependencia de ESPAsyncWebServer).
 
+#Proyecto
+
+En este proyecto, estamos desarrollando un sistema basado en un ESP32 con conexión Wi-Fi como dispositivo maestro y un Arduino como esclavo, comunicados mediante el protocolo I2C. El sistema utiliza un sensor de proximidad para detectar cuando una mascota se acerca a un lugar restringido, generando una alerta sonora. Esta información se transmite al ESP32, que a su vez la despliega en tiempo real en una página web mediante un websocket.
+
+Adicionalmente, el sistema incluye un sensor de temperatura y humedad para monitorear el ambiente donde se encuentra la mascota, asegurando que las condiciones sean óptimas. Este enfoque combina tecnologías de sensores, comunicación inalámbrica y desarrollo web para ofrecer una solución integral de monitoreo y alerta.
+
+
+
+
+https://github.com/user-attachments/assets/cffedd05-6a8e-4d96-ae7d-901e624d6b9e
+
+
 
 
 
